@@ -12,7 +12,7 @@ function Player() {
 
     useEffect(() => {
         fetch(`https://my-json-server.typicode.com/Alyssonafsantos/cinetag-api/videos?id=${parametros.id}`)
-        .then(resposta => resposta.json)
+        .then(resposta => resposta.json())
         .then( dados => {
             setVideo(...dados)
         })
